@@ -1,0 +1,11 @@
+'scopeName': 'source.pgn'
+'name': 'Portable Game Notation'
+'fileTypes': [
+  'pgn'
+]
+'patterns': [
+  {
+    'match': '\\b(White|Black)\\b'
+    'name': 'keyword.control.pgn'
+  }
+]
