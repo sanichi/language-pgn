@@ -3,9 +3,11 @@
 'fileTypes': [
   'pgn'
 ]
+'foldingStartMarker': '^\\s*$'
+'foldingStopMarker': '^\\s*$'
 'patterns': [
   {
-    'match': '\\b(White|Black)\\b'
+    'match': '\\b(Event||Site||Date||Round||White|Black|Result)\\b'
     'name': 'keyword.control.pgn'
   }
 ]

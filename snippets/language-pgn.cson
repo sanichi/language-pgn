@@ -1,0 +1,4 @@
+'.source.pgn':
+  'Tag pair':
+    'prefix': 'tp'
+    'body': '[${1:Name} "${2:Value}"]\n$0'
