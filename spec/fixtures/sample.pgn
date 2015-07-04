@@ -8,6 +8,7 @@
 [WhiteElo "2375"]
 [BlackElo "2505"]
 [ECO "E69"]
+[TestQuote "Embedded \"Quotes\""]
 
 1. d4 Nf6 2. c4 g6 3. Nf3 Bg7 4. g3 O-O 5. Bg2 d6 6. O-O Nbd7 7. Nc3 e5 8. e4
 c6 9. b3 Re8 10. h3 a6 11. d5 cxd5 12. cxd5 b5 13. Ne1 Nb6 14. Nd3 Bd7 15. Be3

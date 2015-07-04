@@ -3,11 +3,26 @@
 'fileTypes': [
   'pgn'
 ]
-'foldingStartMarker': '^\\s*$'
-'foldingStopMarker': '^\\s*$'
 'patterns': [
   {
-    'match': '\\b(Event||Site||Date||Round||White|Black|Result)\\b'
-    'name': 'keyword.control.pgn'
+    'match': '\\b(Event|Site|Date|Round|White|Black|Result)\\b'
+    'name': 'keyword.other.special-method.pgn'
+  }
+  {
+    'begin': '"'
+    'beginCaptures':
+      '0':
+        'name': 'punctuation.definition.string.begin.pgn'
+    'end': '"'
+    'endCaptures':
+      '0':
+        'name': 'punctuation.definition.string.end.pgn'
+    'name': 'string.quoted.double.pgn'
+    'patterns': [
+      {
+        'match': '\\\\.'
+        'name': 'constant.character.escape.pgn'
+      }
+    ]
   }
 ]
