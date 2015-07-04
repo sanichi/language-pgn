@@ -5,10 +5,29 @@
 ]
 'patterns': [
   {
+    'begin': '\\['
+    'end': '\\]'
+    'patterns': [
+      {
+        'include': '#required_tag_name'
+      }
+      {
+        'include': '#optional_tag_name'
+      }
+      {
+        'include': '#quoted_tag_value'
+      }
+    ]
+  }
+]
+'repository':
+  'required_tag_name':
     'match': '\\b(Event|Site|Date|Round|White|Black|Result)\\b'
     'name': 'keyword.other.special-method.pgn'
-  }
-  {
+  'optional_tag_name':
+    'match': '\\b([A-Z][a-z]*)+\\b'
+    'name': 'keyword.control.pgn'
+  'quoted_tag_value':
     'begin': '"'
     'beginCaptures':
       '0':
@@ -24,5 +43,3 @@
         'name': 'constant.character.escape.pgn'
       }
     ]
-  }
-]
