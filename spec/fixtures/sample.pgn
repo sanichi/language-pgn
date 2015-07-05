@@ -1,26 +1,5 @@
 This is a comment.
 
-[Event "Novi Sad ol (Men)"]
-[Site "Novi Sad"]
-[Date "1990.??.??"]
-[Round "4"]
-[White "Orr, Mark J L"]
-[Black "Cramling, Pia"]
-[Result "1-0"]
-[WhiteElo "2375"]
-[BlackElo "2505"]
-[ECO "E69"]
-[TestQuote "Embedded \"Quotes\""]
-
-1. d4 Nf6 2. c4 g6 3. Nf3 Bg7 4. g3 O-O 5. Bg2 d6 6. O-O Nbd7 7. Nc3 e5 8. e4
-c6 9. b3 Re8 10. h3 a6 11. d5 cxd5 12. cxd5 b5 13. Ne1 Nb6 14. Nd3 Bd7 15. Be3
-a5 16. Qd2 Qb8 17. Rfc1 b4 18. Nd1 Bb5 19. a3 bxa3 20. Rxa3 Nbd7 21. Nc3 Bxd3
-22. Qxd3 Rc8 23. Rca1 Nc5 24. Qb5 Nfd7 25. b4 Qxb5 26. Nxb5 Rcb8 27. bxc5 Rxb5
-28. c6 Nb6 29. Bf1 Rb2 30. Rxa5 Rf8 31. Bxb6 Rxb6 32. Ra8 Rbb8 33. Rxb8 Rxb8
-34. c7 1-0
-
-This is also a comment.
-
 [Event "Largs w/e"]
 [Site "?"]
 [Date "1998.07.12"]
@@ -45,5 +24,26 @@ it. } ) 15.Kxc3 Nxe4+ 16.Kc4 Nd6+ 17.Kd5 ( { If } 17.Kc5 { makes the game finish
 even quicker after } 17...b6+ 18.Kd5 Nb4# ) 17...Nb4+ 18.Kc5 Bc3 $3 { The key
 move, trapping the White king in the middle of the board. White can do nothing
 to stop the Black b-pawn delivering checkmate. } 19.Bd4 b6# 0-1
+
+This is also a comment.
+
+[Event "Novi Sad ol (Men)"]
+[Site "Novi Sad"]
+[Date "1990.??.??"]
+[Round "4"]
+[White "Orr, Mark J L"]
+[Black "Cramling, Pia"]
+[Result "1-0"]
+[WhiteElo "2375"]
+[BlackElo "2505"]
+[ECO "E69"]
+[TestQuote "Embedded \"Quotes\""]
+
+1. d4 Nf6 2. c4 g6 3. Nf3 Bg7 4. g3 O-O 5. Bg2 d6 6. O-O Nbd7 7. Nc3 e5 8. e4
+c6 9. b3 Re8 10. h3 a6 11. d5 cxd5 12. cxd5 b5 13. Ne1 Nb6 14. Nd3 Bd7 15. Be3
+a5 16. Qd2 Qb8 17. Rfc1 b4 18. Nd1 Bb5 19. a3 bxa3 20. Rxa3 Nbd7 21. Nc3 Bxd3
+22. Qxd3 Rc8 23. Rca1 Nc5 24. Qb5 Nfd7 25. b4 Qxb5 26. Nxb5 Rcb8 27. bxc5 Rxb5
+28. c6 Nb6 29. Bf1 Rb2 30. Rxa5 Rf8 31. Bxb6 Rxb6 32. Ra8 Rbb8 33. Rxb8 Rxb8
+34. c7 1-0
 
 This is one last comment.

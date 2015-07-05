@@ -1,45 +1,83 @@
-'scopeName': 'source.pgn'
-'name': 'Portable Game Notation'
-'fileTypes': [
+scopeName: 'source.pgn'
+name: 'Portable Game Notation'
+fileTypes: [
   'pgn'
 ]
-'patterns': [
+patterns: [
   {
-    'begin': '\\['
-    'end': '\\]'
-    'patterns': [
+    begin: '\\['
+    end: '\\]'
+    patterns: [
       {
-        'include': '#required_tag_name'
+        include: '#required_tag_name'
       }
       {
-        'include': '#optional_tag_name'
+        include: '#optional_tag_name'
       }
       {
-        'include': '#quoted_tag_value'
+        include: '#quoted_tag_value'
+      }
+    ]
+  }
+  {
+    begin: '^[1-9]\\d*\\.'
+    end: '(1-0|0-1|1\\/2-1\\/2|\\*-\\*)'
+    endCaptures:
+      0:
+        name: 'string.quoted.double.pgn'
+    name: 'markup.bold.pgn'
+    patterns: [
+      {
+        include: '#comment'
+      }
+      {
+        include: '#variation'
+      }
+      {
+        include: '#annotation'
       }
     ]
   }
 ]
-'repository':
-  'required_tag_name':
-    'match': '\\b(Event|Site|Date|Round|White|Black|Result)\\b'
-    'name': 'keyword.other.special-method.pgn'
-  'optional_tag_name':
-    'match': '\\b([A-Z][a-z]*)+\\b'
-    'name': 'keyword.control.pgn'
-  'quoted_tag_value':
-    'begin': '"'
-    'beginCaptures':
-      '0':
-        'name': 'punctuation.definition.string.begin.pgn'
-    'end': '"'
-    'endCaptures':
-      '0':
-        'name': 'punctuation.definition.string.end.pgn'
-    'name': 'string.quoted.double.pgn'
-    'patterns': [
+repository:
+  required_tag_name:
+    match: '\\b(Event|Site|Date|Round|White|Black|Result)\\b'
+    name: 'keyword.other.special-method.pgn'
+  optional_tag_name:
+    match: '\\b([A-Z][a-z]*)+\\b'
+    name: 'keyword.control.pgn'
+  quoted_tag_value:
+    begin: '"'
+    beginCaptures:
+      0:
+        name: 'punctuation.definition.string.begin.pgn'
+    end: '"'
+    endCaptures:
+      0:
+        name: 'punctuation.definition.string.end.pgn'
+    name: 'string.quoted.double.pgn'
+    patterns: [
       {
-        'match': '\\\\.'
-        'name': 'constant.character.escape.pgn'
+        match: '\\\\.'
+        name: 'constant.character.escape.pgn'
+      }
+    ]
+  comment:
+    begin: '\\{'
+    end: '\\}'
+    name: 'comment.block.documentation.pgn'
+  annotation:
+    match: '\\$\\d+'
+    name: 'comment.line.character.pgn'
+  variation:
+    begin: '\\('
+    end: '\\)'
+    name: 'markup.italic.pgn'
+    patterns: [
+      {
+        include: '#variation'
+      }
+      {
+        include: '#comment'
       }
     ]
