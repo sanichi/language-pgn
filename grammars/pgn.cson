@@ -20,7 +20,10 @@ patterns: [
     ]
   }
   {
-    begin: '^[1-9]\\d*\\.'
+    begin: '^((\\{[^\\}]*\\})|[1-9]\\d*\\.)'
+    beginCaptures:
+      2:
+        name: 'comment.block.documentation.pgn'
     end: '(1-0|0-1|1\\/2-1\\/2|\\*-\\*)'
     endCaptures:
       0:
@@ -37,6 +40,10 @@ patterns: [
         include: '#annotation'
       }
     ]
+  }
+  {
+    match: '^\\s*\\S[^\\n]+'
+    name: 'comment.block.documentation.pgn'
   }
 ]
 repository:
