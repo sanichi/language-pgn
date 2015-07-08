@@ -87,4 +87,7 @@ repository:
       {
         include: '#comment'
       }
+      {
+        include: '#annotation'
+      }
     ]
