@@ -75,7 +75,7 @@ repository:
     name: 'comment.block.documentation.pgn'
   annotation:
     match: '\\$\\d+'
-    name: 'comment.line.character.pgn'
+    name: 'variable.other.pgn'
   variation:
     begin: '\\('
     end: '\\)'
