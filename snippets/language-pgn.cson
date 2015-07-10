@@ -53,3 +53,48 @@
   'Any tag pair':
     prefix: 'tp'
     body: '[${1:Name} "${2:Value}"]\n$0'
+  'Good move':
+    prefix: '!'
+    body: ' \\$1'
+  'Bad move':
+    prefix: '?'
+    body: ' \\$2'
+  'Excellent move':
+    prefix: '!!'
+    body: ' \\$3'
+  'Blunder':
+    prefix: '??'
+    body: ' \\$4'
+  'Speculative move':
+    prefix: '!?'
+    body: ' \\$5'
+  'Dubious move':
+    prefix: '?!'
+    body: ' \\$6'
+  'Only move':
+    prefix: 'O'
+    body: ' \\$7'
+  'Equal position':
+    prefix: '='
+    body: ' \\$10'
+  'Unclear position':
+    prefix: '&'
+    body: ' \\$13'
+  'White has small advantage':
+    prefix: '+='
+    body: ' \\$14'
+  'Black has small advantage':
+    prefix: '=+'
+    body: ' \\$15'
+  'White is much better':
+    prefix: '+>'
+    body: ' \\$16'
+  'Black is much better':
+    prefix: '>+'
+    body: ' \\$17'
+  'White is winning':
+    prefix: '+-'
+    body: ' \\$18'
+  'Black is winning':
+    prefix: '-+'
+    body: ' \\$19'
