@@ -42,6 +42,13 @@ patterns: [
     ]
   }
   {
+    match: '^\\s*(1-0|0-1|1\\/2-1\\/2|\\*-\\*)'
+    name: 'markup.bold.pgn'
+    captures:
+      1:
+        name: 'string.quoted.double.pgn'
+  }
+  {
     match: '^\\s*\\S[^\\n]+'
     name: 'comment.block.documentation.pgn'
   }
@@ -49,10 +56,10 @@ patterns: [
 repository:
   required_tag_name:
     match: '\\b(Event|Site|Date|Round|White|Black|Result)\\b'
-    name: 'keyword.other.special-method.pgn'
+    name: 'keyword.control.pgn'
   optional_tag_name:
     match: '\\b([A-Z][a-z]*)+\\b'
-    name: 'keyword.control.pgn'
+    name: 'keyword.other.special-method.pgn'
   quoted_tag_value:
     begin: '"'
     beginCaptures:
