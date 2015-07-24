@@ -1,6 +1,6 @@
 {
   "name": "language-pgn",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "description": "A PGN (portable [chess] game notation) package for Atom",
   "repository": "https://github.com/sanichi/language-pgn",
   "license": "MIT",
