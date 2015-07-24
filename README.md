@@ -1,5 +1,7 @@
-# language-pgn package
+# PGN (chess) file support in Atom
 
-A short description of your package.
+Syntax highlighting and editing snippets for PGN
+([Portable Game Notation](https://en.wikipedia.org/wiki/Portable_Game_Notation), for chess)
+files in the [Atom](https://atom.io/) editor.
 
-![A screenshot of your package](https://f.cloud.github.com/assets/69169/2290250/c35d867a-a017-11e3-86be-cd7c5bf3ff9b.gif)
+![Sample screenshot](https://github.com/sanichi/language-pgn/screenshots/sample.png)
