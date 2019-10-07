@@ -24,7 +24,7 @@ patterns: [
     beginCaptures:
       2:
         name: 'comment.block.documentation.pgn'
-    end: '(1-0|0-1|1\\/2-1\\/2|\\*-\\*)'
+    end: '(1-0|0-1|1\\/2-1\\/2|\\*)'
     endCaptures:
       0:
         name: 'string.quoted.double.pgn'
@@ -42,7 +42,7 @@ patterns: [
     ]
   }
   {
-    match: '^\\s*(1-0|0-1|1\\/2-1\\/2|\\*-\\*)'
+    match: '^\\s*(1-0|0-1|1\\/2-1\\/2|\\*)'
     name: 'markup.bold.pgn'
     captures:
       1:
